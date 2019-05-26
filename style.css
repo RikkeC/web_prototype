@@ -174,9 +174,8 @@ line1,
     position: absolute;
     text-decoration: none;
     top: 10px;
-    left: 25px;
+    left: 450px;
     font-size: 36px;
-    margin-right: 50px;
     z-index: 100;
     color: #fff;
     cursor: pointer;
@@ -189,4 +188,91 @@ line1,
     margin: auto;
     padding: 16px;
     font-size: 30px;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.col1 .box {
+    flex-grow: 1;
+    border: solid #FFB4AA;
+    height: 100px;
+    width: 10px;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.box2 {
+    flex-grow: 2.1;
+    border: solid #FFB4AA;
+    height: 100px;
+    width: 10px;
+}
+
+.col2 .box {
+    flex-grow: 1;
+    border: solid #FFB4AA;
+    height: 100px;
+    width: 10px;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.col3 .box {
+    flex-grow: 1;
+    border: solid #FFB4AA;
+    height: 100px;
+    width: 10px;
+
+
+}
+
+#favoritlogo {
+    height: 20vw;
+
+}
+
+.col4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.boxwrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxwrapper .box {
+    flex-grow: 1;
+    border: solid #FFB4AA;
+    height: 100px;
+    width: 161px;
+}
+
+.box3 {
+    flex-grow: 2.1;
+    border: solid #FFB4AA;
+    height: 210px;
+    width: 10px;
+}
+
+.col5 {
+    display: flex;
+    flex-direction: row;
+}
+
+.col5 .box {
+    flex-grow: 1;
+    border: solid #FFB4AA;
+    height: 100px;
+    width: 10px;
 }
