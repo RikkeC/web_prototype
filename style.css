@@ -1,15 +1,28 @@
 body {
     margin: 0;
+    background-color: #f2f2f2;
 }
 
 .logo {
+    display: flex;
     background-color: #EA5045;
     height: 50vw;
     width: 100vw;
+    justify-content: center;
 
 }
 
-#logobilled {}
+#logobilled {
+    width: 40vw;
+    height: 20vw;
+
+}
+
+#logind {
+    display: block;
+    width: 100%;
+    background-color: #f2f2f2;
+}
 
 /* style the container */
 .logindfacebook {
@@ -22,7 +35,8 @@ body {
 /* style inputs and link buttons */
 input,
 .btn {
-    width: 100%;
+    display: flex;
+    width: 50%;
     padding: 12px;
     border: none;
     border-radius: 10px;
@@ -53,5 +67,5 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #EA5045;
 }
