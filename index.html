@@ -7,17 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web prodotype</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <section id="logind">
         <div class="logo">
-            <img src="Kea%20logo.png" alt="kea logo">
+            <img id="logobilled" src="Kea%20logo.png" alt="kea logo">
         </div>
-        <div class="brugernavn"></div>
-        <div class="password"></div>
-        <div class="continue"></div>
-        <div class="logindfacebook"></div>
+        <form action="/action_page.php">
+            <div class="brugernavn">
+                <div class="col">
+                    <div class="hide-md-lg">
+
+                    </div>
+
+                    <input type="text" name="username" placeholder="Username" required>
+
+                </div>
+            </div>
+        </form>
+        <div class="password">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="continue">
+            <input type="submit" value="Continue">
+        </div>
+
+        <div class="logindfacebook">
+            <div class="col">
+                <a href="#" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                </a>
+            </div>
+        </div>
     </section>
     <script src=""></script>
     <footer></footer>
