@@ -5,41 +5,44 @@
     <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web prodotype</title>
+    <title>Web produtype</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <section id="logind">
+    <header>
         <div class="logo">
-            <img id="logobilled" src="Kea%20logo.png" alt="kea logo">
+            <img id="logobilled" src="elementer/kea%20logo.svg" alt="kea logo">
         </div>
-        <form action="/action_page.php">
+    </header>
+    <section id="logind">
+        <form class="loginform" action="forside.html">
 
             <div class="brugernavn">
-                <div class="col">
-                    <input type="text" name="username" placeholder="Username" required>
-
-                    <div class="password">
-                        <input type="password" name="password" placeholder="Password" required>
-                    </div>
-                    <div class="continue">
-                        <input type="submit" value="Continue">
-                    </div>
-                </div>
+                <input type="text" placeholder="Brugernavn">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password">
             </div>
 
+            <div class="glemtpassword">
+                <a href="glemtpassword.html">Glemt password</a>
+            </div>
+            <div class="huskmig">
+                <label>Husk mig</label>
+                <input type="checkbox">
+            </div>
+            <div class="continue" href="forside.html">
+                <input type="submit" value="Log ind">
+            </div>
+            <div class="logindfacebook" href="https://da-dk.facebook.com/">
+                <input class="fb" value="Log ind med Facebook">
+            </div>
         </form>
-        <div class="logindfacebook">
-            <div class="col">
-                <a href="#" class="fb btn">
-                    <img src="Facebook%20logo.png" alt="facebook logo">
-                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-                </a>
-            </div>
-        </div>
     </section>
     <script src="script.js"></script>
     <footer></footer>
-</body></html>
+</body>
+
+</html>

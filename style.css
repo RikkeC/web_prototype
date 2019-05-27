@@ -1,7 +1,27 @@
 body {
     margin: 0;
-    background-color: #f2f2f2;
+    background-color: #FAF7F7;
 }
+
+h1 {
+    color: #F58E81;
+    font-size: 4rem;
+    margin-top: 100px;
+
+}
+
+h2 {
+    color: #F58E81;
+}
+
+
+h6 {
+    margin: 0px;
+    color: #F58E81;
+}
+
+
+/********************************LOG IND************************/
 
 .logo {
     display: flex;
@@ -15,41 +35,41 @@ body {
 #logobilled {
     width: 40vw;
     height: 20vw;
+    margin-top: 50px;
 
 }
 
 #logind {
-    display: block;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #f2f2f2;
+    align-items: center;
+
 }
 
 /* style the container */
 .logindfacebook {
-    position: relative;
-    border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px 0 30px 0;
+
+
 }
 
 /* style inputs and link buttons */
-input,
-.btn {
-    display: flex;
-    width: 50%;
+input {
+    width: 50vw;
     padding: 12px;
     border: none;
-    border-radius: 10px;
-    margin: 5px 0;
+    border-radius: 20px;
+    margin: 20px 20px;
     opacity: 0.85;
     display: inline-block;
     font-size: 17px;
     line-height: 20px;
     text-decoration: none;
+
 }
 
-input:hover,
-.btn:hover {
+input:hover {
     opacity: 2;
 }
 
@@ -64,32 +84,44 @@ input[type=submit] {
     background-color: #EA5045;
     color: white;
     cursor: pointer;
+    margin-left: 35px;
 }
 
 input[type=submit]:hover {
     background-color: #EA5045;
 }
 
+.continue {
+    margin-top: 40px;
+}
+
+.brugernavn {
+    margin-top: 30px;
+}
+
+
 /**************************************** forside ***************************/
 
 
 .logo1 {
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
-/*Burgermenu*/
+/******************************Burgermenu*************************/
 .navigation {
     width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #3F3140;
+    background-color: #EA5045;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
     padding-top: 0px;
 }
+
 
 .navigation a {
     text-decoration: none;
@@ -101,14 +133,17 @@ input[type=submit]:hover {
     list-style: none;
     margin-left: auto;
     margin-right: auto;
+    padding: 0px;
+
 }
 
 
 .menulist {
     width: 200px;
+    background-color: #3F3140;
 }
 
-line1,
+.line1,
 .line2,
 .line3 {
     margin-top: 5px;
@@ -119,7 +154,7 @@ line1,
     position: relative;
     opacity: 1.0;
     border-radius: 15%;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .line1.active {
@@ -152,16 +187,16 @@ line1,
     text-align: center;
     color: #F58E81;
     opacity: 0.0;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: #3F3140;
 }
 
 .menuitems:after {
-    content: '';
     display: block;
     width: 0;
     height: 1px;
     background: #fff;
-    transition: width .2s;
+    transition: 2s;
 }
 
 .menuitems:hover::after {
@@ -171,7 +206,7 @@ line1,
 #closebtn {
     height: 25px;
     width: 25px;
-    position: absolute;
+    position: fixed;
     text-decoration: none;
     top: 10px;
     left: 450px;
@@ -179,100 +214,64 @@ line1,
     z-index: 100;
     color: #fff;
     cursor: pointer;
-    transition: background-position .3s;
+    transition: 1s;
 }
 
+
 #main {
-    transition: margin-top .4s;
+    transition: 1s;
     text-align: center;
     margin: auto;
-    padding: 16px;
+    padding: 10px;
     font-size: 30px;
 }
 
-.col1 {
-    display: flex;
-    flex-direction: row;
+/********************************burgermenu slut************************/
 
+.col1,
+.col2,
+.col3,
+.col4,
+.col5 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.col1 .box {
+.box {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    flex-basis: 100px;
     flex-grow: 1;
-    border: solid #FFB4AA;
-    height: 100px;
-    width: 10px;
-}
-
-.col2 {
-    display: flex;
-    flex-direction: row;
+    text-align: center;
 }
 
 .box2 {
-    flex-grow: 2.1;
-    border: solid #FFB4AA;
-    height: 100px;
-    width: 10px;
-}
-
-.col2 .box {
-    flex-grow: 1;
-    border: solid #FFB4AA;
-    height: 100px;
-    width: 10px;
-}
-
-.col3 {
-    display: flex;
-    flex-direction: row;
-}
-
-.col3 .box {
-    flex-grow: 1;
-    border: solid #FFB4AA;
-    height: 100px;
-    width: 10px;
-
-
-}
-
-#favoritlogo {
-    height: 20vw;
-
-}
-
-.col4 {
-    display: flex;
-    flex-direction: row;
-}
-
-.boxwrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.boxwrapper .box {
-    flex-grow: 1;
-    border: solid #FFB4AA;
-    height: 100px;
-    width: 161px;
+    background-color: white;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    flex-basis: 100px;
+    flex-grow: 4.5;
 }
 
 .box3 {
-    flex-grow: 2.1;
-    border: solid #FFB4AA;
-    height: 210px;
-    width: 10px;
+    background-color: white;
+    width: 300px;
+    height: 310px;
+    margin: 10px;
+    flex-basis: 100px;
+    flex-grow: 4.5;
 }
 
-.col5 {
-    display: flex;
-    flex-direction: row;
+.icon {
+    width: 60px;
+    margin-top: 35px;
 }
 
-.col5 .box {
-    flex-grow: 1;
-    border: solid #FFB4AA;
-    height: 100px;
-    width: 10px;
+.icon2 {
+    width: 70px;
+    margin-top: 35px;
+    margin-bottom: 10px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta name="robots" content="noindex">
     <meta charset="utf-8">
@@ -10,56 +11,89 @@
 
 <body>
     <header>
-    </header>
-    <div id="topNav" class="navigation">
-        <span id="closebtn" onclick="navToggle()">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-        </span>
-        <div class="logo1">
-            <img src="kea%20logo%20hvid.png" />
-        </div>
-        <ul class="menulist">
-            <li><a class="menuitems" href="#">Aktuelt</a></li>
-            <li><a class="menuitems" href="#">Skema</a></li>
-            <li><a class="menuitems" href="#">Afleveringer</a></li>
-            <li><a class="menuitems" href="#">Materialer</a></li>
-            <li><a class="menuitems" href="#">Chat</a></li>
-            <li><a class="menuitems" href="#">Indstillinger</a></li>
-            <li><a class="menuitems" href="#">Log ud</a></li>
-        </ul>
-    </div>
-    <div id="main">
-    </div>
-    <section id="forside">
-        <div class="col1">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="col2">
-            <div class="box2"></div>
-            <div class="box"></div>
-        </div>
-        <div class="col3">
-            <div class="box"><img id="favoritlogo" src="favoritter.png" alt="favoritter"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="col4">
-            <div class="boxwrapper">
-                <div class="box"></div>
-                <div class="box"></div>
+
+        <div id="topNav" class="navigation">
+            <span id="closebtn" onclick="navToggle()">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </span>
+            <div class="logo1">
+                <img src="elementer/kea%20logo.svg" />
             </div>
-            <div class="box3"></div>
+            <ul class="menulist">
+                <li><a class="menuitems" href="#">Aktuelt</a></li>
+                <li><a class="menuitems" href="#">Skema</a></li>
+                <li><a class="menuitems" href="#">Afleveringer</a></li>
+                <li><a class="menuitems" href="#">Materialer</a></li>
+                <li><a class="menuitems" href="#">Chat</a></li>
+                <li><a class="menuitems" href="#">Indstillinger</a></li>
+                <li><a class="menuitems" href="index.html">Log ud</a></li>
+            </ul>
         </div>
-        <div class="col5">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-    </section>
+    </header>
+    <div id="main">
+        <section id="forside">
+            <div class="col1">
+                <div class="box">
+                    <img class="icon" src="elementer/Folder.svg" alt="matrialer">
+                    <h6>Materialer</h6>
+                </div>
+                <div class="box">
+                    <img class="icon" src="elementer/Calendar.svg" alt="skema">
+                    <h6>Skema</h6>
+                </div>
+                <div class="box">
+                    <img class="icon" src="elementer/Alert.svg" alt="notifikationer">
+                    <h6>Notifikationer</h6>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="box2">
+                    <h2>Techlounge</h2>
+                </div>
+                <div class="box">
+                    <img class="icon" src="elementer/Messages.svg" alt="mail">
+                    <h6>Mail</h6>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="box"> <img class="icon" src="elementer/Bookmark.svg" alt="favoritter">
+                    <h6>Favoritter</h6>
+                </div>
+                <div class="box"> <img class="icon2" src="elementer/chat.svg" alt="grupper">
+                    <h6>Grupper</h6>
+                </div>
+                <div class="box"> <img class="icon2" src="elementer/Group%201610.svg" alt="chat">
+                    <h6>Chat</h6>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="boxwrapper">
+                    <div class="box">
+                        <img class="icon" src="elementer/Search.svg" alt="søg">
+                        <h6>Søg</h6>
+                    </div>
+                    <div class="box"><img class="icon" src="elementer/Component%205%20%E2%80%93%202.svg" alt="Afleveringer">
+                        <h6>Afleveringer</h6>
+                    </div>
+                </div>
+                <div class="box3">
+                    <h1>Aktuelt</h1>
+                </div>
+            </div>
+            <div class="col5">
+                <div class="box"><img class="icon" src="elementer/sp%C3%B8rgsm%C3%A5lstegn.svg" alt="spørgsmål">
+                </div>
+                <div class="box">
+                    <img class="icon" src="elementer/sp%C3%B8rgsm%C3%A5lstegn.svg" alt="spørgsmål">
+                </div>
+                <div class="box">
+                    <img class="icon" src="elementer/sp%C3%B8rgsm%C3%A5lstegn.svg" alt="spørgsmål">
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="script.js"></script>
     <footer></footer>
