@@ -34,7 +34,6 @@ h4 {
 h5 {
     font-size: 3vw;
     margin-left: 2vw;
-    padding-top: 2vw;
 
 }
 
@@ -131,12 +130,14 @@ input[type=submit]:hover {
     text-align: center;
     position: fixed;
     width: 100%;
+    transition: transform .5s;
 }
 
 #menulist {
     text-align: center;
     padding: 20px;
     background-color: #3F3140;
+
 }
 
 #keaicon {
@@ -152,15 +153,17 @@ input[type=submit]:hover {
 
 #menuknap {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 5px;
     font-size: 2rem;
     color: white;
+    width: 8vw;
 }
 
 .hidden {
     visibility: hidden;
 }
+
 
 #logud {
     background-color: #EA847C;
@@ -168,8 +171,12 @@ input[type=submit]:hover {
     margin-top: 165px;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 /*************************burgermenu slut************************/
-/**************************************** forside ***************************/
+/************************** forside ***************************/
 
 .title {
     background-color: #EA5045;
@@ -220,6 +227,31 @@ input[type=submit]:hover {
     text-align: center;
 }
 
+.box:hover {
+    background-color: #F58E81;
+}
+
+.box2:hover {
+    background-color: #F58E81;
+}
+
+.box3:hover {
+    background-color: #F58E81;
+}
+
+h1:hover {
+    color: #ffff;
+}
+
+h2:hover {
+    color: #ffff;
+}
+
+h6:hover {
+    color: #ffff;
+}
+
+
 .box2 {
     background-color: white;
     width: 300px;
@@ -243,6 +275,8 @@ input[type=submit]:hover {
     margin-top: 35px;
 }
 
+.icon:hover {}
+
 .icon2 {
     width: 70px;
     margin-top: 35px;
@@ -250,6 +284,7 @@ input[type=submit]:hover {
 }
 
 /*****************************afleveringer********************/
+
 .aflevering h3 {
     color: black;
     margin: 1vw;
@@ -259,29 +294,33 @@ input[type=submit]:hover {
 .aflevering h4 {
     color: #EA5045;
     padding-left: 3vw;
+    margin-top: 10vw;
 }
 
 .aflevering {
     background-color: #ffff;
 }
 
-#neasteaflevering {
-    background-color: #DEDCDB;
-    margin: 3vw;
-}
-
-#afllogo {
-    position: relative;
-}
-
+#neasteaflevering,
 #upload {
     background-color: #DEDCDB;
     margin: 3vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 #tema1 {
     background-color: #DEDCDB;
-    margin: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#down1 {
+    height: 5vw;
+    width: 5vw;
+
 }
 
 #tema2,
@@ -289,4 +328,106 @@ input[type=submit]:hover {
 #tema4 {
     background-color: #DEDCDB;
     margin: 3vw;
+}
+
+#opgave {
+    border-bottom: solid #DEDCDB;
+    border-left: solid #DEDCDB;
+    border-right: solid #DEDCDB;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hidden_none {
+    display: none;
+}
+
+/***************************Skema********************************/
+
+#topcol {
+    background-color: #DEDCDB;
+    display: flex;
+    justify-content: space-between;
+}
+
+#topcol h3 {
+    color: #000000;
+    margin-left: 3vw;
+    margin-bottom: 0vw;
+    margin-top: 2vw;
+}
+
+#topcol h4 {
+    color: #707070;
+    margin-right: 3vw;
+    margin-bottom: 0vw;
+    margin-top: 3vw;
+}
+
+#text1 h5 {
+    color: #707070;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+    margin-top: 2vw;
+}
+
+#text2 h5 {
+    color: #707070;
+    margin-bottom: 3vw;
+    margin-top: 2vw;
+}
+
+#måned {
+    background-color: #3f3140;
+    display: flex;
+    justify-content: center;
+}
+
+#måned img {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 5vw;
+    margin-top: 15vw;
+}
+
+#text3 {
+    text-align: center;
+}
+
+#text3 p {
+    color: #ffff;
+    margin: 0;
+}
+
+#modul1 h4 {
+    color: #dedcdb;
+    font-size: 3vw;
+    margin-left: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+}
+
+#tid1,
+#tid2 {
+    background-color: #ffff;
+    border-bottom: solid #dedcdb;
+    padding: 1vw;
+    width: 98vw;
+}
+
+#modul1 {
+    display: flex;
+
+
+}
+
+#ideogdesign {
+    background-color: #dedcdb;
+    position: fixed;
+    left: 15vw;
+    width: 80vw;
 }

@@ -6,6 +6,7 @@ function sidenVises() {
 
     document.querySelector("#burgericon").addEventListener("click", toggleMenu);
 
+    document.querySelector("#down1").addEventListener("click", dropdown_tema1);
 }
 
 function toggleMenu() {
@@ -19,9 +20,18 @@ function toggleMenu() {
 
 }
 
+function dropdown_tema1() {
+    console.log("dropdown_tema1");
+    document.querySelector("#dropdown_tema1").classList.remove("hidden_none");
+    document.querySelector("#down1").addEventListener("click", backAgain);
+
+}
+
 function backAgain() {
     console.log("backAgain");
     document.querySelector("#togglemenu").classList.add("hidden");
 
+
     document.querySelector(".title").classList.remove("hidden");
+    document.querySelector("#dropdown_tema1").classList.add("hidden_none");
 }
