@@ -3,6 +3,10 @@ body {
     background-color: #FAF7F7;
 }
 
+p {
+    margin-left: 2vw;
+}
+
 h1 {
     color: #F58E81;
     font-size: 15vw;
@@ -24,6 +28,13 @@ h3 {
 h4 {
     color: #ffff;
     font-size: 4vw;
+
+}
+
+h5 {
+    font-size: 3vw;
+    margin-left: 2vw;
+    padding-top: 2vw;
 
 }
 
@@ -112,21 +123,6 @@ input[type=submit]:hover {
     margin-top: 30px;
 }
 
-
-/**************************************** forside ***************************/
-
-.title {
-    background-color: #EA5045;
-    height: 10vw;
-    display: flex;
-}
-
-#titlelogo {
-    margin-left: 2vw;
-}
-
-#titleprofil #burgericon {}
-
 /******************************Burgermenu*************************/
 
 #menu {
@@ -173,6 +169,37 @@ input[type=submit]:hover {
 }
 
 /*************************burgermenu slut************************/
+/**************************************** forside ***************************/
+
+.title {
+    background-color: #EA5045;
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerright {
+    position: relative;
+    width: 20vw
+}
+
+#titlelogo {
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+
+#titleprofil {
+    position: absolute;
+    top: 2vw;
+    width: 5vw;
+}
+
+#burgericon {
+    position: absolute;
+    top: 2vw;
+    right: 5vw;
+    width: 5vw;
+}
 
 .col1,
 .col2,
@@ -220,4 +247,46 @@ input[type=submit]:hover {
     width: 70px;
     margin-top: 35px;
     margin-bottom: 10px;
+}
+
+/*****************************afleveringer********************/
+.aflevering h3 {
+    color: black;
+    margin: 1vw;
+    padding: 2vw;
+}
+
+.aflevering h4 {
+    color: #EA5045;
+    padding-left: 3vw;
+}
+
+.aflevering {
+    background-color: #ffff;
+}
+
+#neasteaflevering {
+    background-color: #DEDCDB;
+    margin: 3vw;
+}
+
+#afllogo {
+    position: relative;
+}
+
+#upload {
+    background-color: #DEDCDB;
+    margin: 3vw;
+}
+
+#tema1 {
+    background-color: #DEDCDB;
+    margin: 3vw;
+}
+
+#tema2,
+#tema3,
+#tema4 {
+    background-color: #DEDCDB;
+    margin: 3vw;
 }
