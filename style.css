@@ -5,35 +5,43 @@ body {
 
 p {
     margin-left: 2vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     color: #F58E81;
     font-size: 15vw;
     margin-top: 20vw;
+    margin-left: 2vw;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
 h2 {
     color: #F58E81;
     font-size: 10vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2vw;
 }
 
 h3 {
     color: #F58E81;
     font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
 h4 {
     color: #ffff;
     font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
 h5 {
     font-size: 3vw;
     margin-left: 2vw;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -41,6 +49,7 @@ h6 {
     margin: 0px;
     color: #F58E81;
     font-size: 3vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -162,6 +171,8 @@ input[type=submit]:hover {
 
 .hidden {
     visibility: hidden;
+    /*    opacity: 0;*/
+
 }
 
 
@@ -289,12 +300,14 @@ h6:hover {
     color: black;
     margin: 1vw;
     padding: 2vw;
+    font-weight: bold;
 }
 
 .aflevering h4 {
     color: #EA5045;
     padding-left: 3vw;
     margin-top: 10vw;
+    font-weight: bold;
 }
 
 .aflevering {
@@ -309,6 +322,26 @@ h6:hover {
     justify-content: space-between;
 }
 
+#afllogo {
+    position: relative;
+    top: 14vw;
+    left: -1vw;
+}
+
+#afllogo img {
+    width: 8vw;
+}
+
+#dokument img {
+    width: 5.5vw;
+}
+
+#dokument {
+    position: relative;
+    top: 16vw;
+    left: -1vw;
+}
+
 #tema1 {
     background-color: #DEDCDB;
     margin-left: 3vw;
@@ -320,7 +353,24 @@ h6:hover {
 #down1 {
     height: 5vw;
     width: 5vw;
+    position: relative;
+    top: 15vw;
+    left: 20vw;
 
+}
+
+#op {
+    position: relative;
+    top: 15vw;
+    right: 2.5vw;
+}
+
+#down {
+    height: 5vw;
+    width: 5vw;
+    position: relative;
+    top: 15vw;
+    right: 2vw;
 }
 
 #tema2,
@@ -328,6 +378,9 @@ h6:hover {
 #tema4 {
     background-color: #DEDCDB;
     margin: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 #opgave {
@@ -341,8 +394,17 @@ h6:hover {
 
 }
 
+#opgave img {
+    width: 5.5vw;
+
+}
+
 .hidden_none {
     display: none;
+}
+
+.aflevering img {
+    width: 5vw;
 }
 
 /***************************Skema********************************/
@@ -384,13 +446,14 @@ h6:hover {
     background-color: #3f3140;
     display: flex;
     justify-content: center;
+    height: 20vw;
 }
 
 #måned img {
     margin-left: 10vw;
     margin-right: 10vw;
-    height: 5vw;
-    margin-top: 15vw;
+    height: 4vw;
+    margin-top: 8vw;
 }
 
 #text3 {
@@ -402,7 +465,14 @@ h6:hover {
     margin: 0;
 }
 
-#modul1 h4 {
+#måned h4 {
+    margin: 2vw;
+}
+
+#modul1 h4,
+#modul2 h4,
+#modul3 h4,
+#modul4 h4 {
     color: #dedcdb;
     font-size: 3vw;
     margin-left: 3vw;
@@ -412,14 +482,21 @@ h6:hover {
 }
 
 #tid1,
-#tid2 {
+#tid2,
+#tid3,
+#tid4,
+#tid5,
+#tid6 {
     background-color: #ffff;
     border-bottom: solid #dedcdb;
     padding: 1vw;
     width: 98vw;
 }
 
-#modul1 {
+#modul1,
+#modul2,
+#modul3,
+#modul4 {
     display: flex;
 
 
@@ -427,7 +504,68 @@ h6:hover {
 
 #ideogdesign {
     background-color: #dedcdb;
-    position: fixed;
+    position: absolute;
     left: 15vw;
     width: 80vw;
+    height: 22.3vw;
+}
+
+#ovelser {
+    background-color: #dedcdb;
+    position: absolute;
+    left: 15vw;
+    width: 80vw;
+    margin-top: 3.5vw;
+    height: 22.3vw;
+}
+
+#tid3,
+#tid5 {
+    margin-top: 3vw;
+    border-top: solid #dedcdb;
+}
+
+#arbejdselv {
+    background-color: #dedcdb;
+    position: absolute;
+    left: 15vw;
+    width: 80vw;
+    margin-top: 3.5vw;
+    height: 11vw;
+}
+
+#modul1 h3,
+#modul2 h3,
+#modul3 h3 {
+    color: black;
+    font-size: 3vw;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+}
+
+#modul1 p,
+#modul2 p,
+#modul3 p {
+    font-size: 2.5vw;
+    margin-top: 0vw;
+}
+
+/*********************************Materialer**********************/
+#styletile {
+    background-color: #DEDCDB;
+    margin: 3vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100vw;
+}
+
+footer {
+    background-color: #3f3140;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color: #ffff;
 }
