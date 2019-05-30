@@ -28,12 +28,3 @@ function dropdown_tema1() {
     document.querySelector("#op").classList.toggle("hidden");
     document.querySelector("#op").addEventListener("click", dropdown_tema1);
 }
-//
-//function backAgain() {
-//    console.log("backAgain");
-//    document.querySelector("#togglemenu").classList.add("hidden");
-//
-//
-//    document.querySelector(".title").classList.remove("hidden");
-//    document.querySelector("#dropdown_tema1").classList.add("hidden_none");
-//}

@@ -3,6 +3,11 @@ body {
     background-color: #FAF7F7;
 }
 
+label {
+    font-size: 2.5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
 p {
     margin-left: 2vw;
     font-family: 'Montserrat', sans-serif;
@@ -52,6 +57,9 @@ h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+a:link {
+    text-decoration: none;
+}
 
 /********************************LOG IND************************/
 
@@ -79,20 +87,17 @@ h6 {
 
 }
 
-/* style the container */
 .logindfacebook {
     background-color: #f2f2f2;
-
-
+    margin-left: 5vw;
 }
 
-/* style inputs and link buttons */
 input {
     width: 50vw;
     padding: 12px;
     border: none;
     border-radius: 20px;
-    margin: 20px 20px;
+    margin: 4vw 4vw;
     opacity: 0.85;
     display: inline-block;
     font-size: 17px;
@@ -109,14 +114,14 @@ input:hover {
     background-color: #f2f2f2;
     color: #EA5045;
     outline: solid #EA5045;
+    text-align: center;
 }
 
-/* style the submit button */
 input[type=submit] {
     background-color: #EA5045;
     color: white;
     cursor: pointer;
-    margin-left: 35px;
+    margin-left: ;
 }
 
 input[type=submit]:hover {
@@ -124,11 +129,40 @@ input[type=submit]:hover {
 }
 
 .continue {
-    margin-top: 40px;
+    margin-top: 10vw;
+    margin-left: 7vw;
 }
 
+
 .brugernavn {
-    margin-top: 30px;
+    margin-top: 5vw;
+    margin-left: 3vw;
+}
+
+.password {
+    margin-left: 3vw;
+}
+
+.huskmig {
+    position: relative;
+    top: -12vw;
+    left: 44vw;
+}
+
+.huskmig input {
+    margin: 1vw;
+    width: 5vw;
+}
+
+#logind p {
+    font-size: 2.5vw;
+    color: #F58E81;
+}
+
+.glemtpassword {
+    position: relative;
+    top: -5.5vw;
+    left: 6vw;
 }
 
 /******************************Burgermenu*************************/
@@ -150,10 +184,9 @@ input[type=submit]:hover {
 }
 
 #keaicon {
-    width: 200px;
     text-align: center;
-    margin-top: 50px;
-    margin-left: 150px;
+    margin-top: 10vw;
+
 }
 
 .keaimg {
@@ -178,12 +211,17 @@ input[type=submit]:hover {
 
 #logud {
     background-color: #EA847C;
-    padding: 1px;
-    margin-top: 165px;
+    padding: 1vw;
+    margin-top: 35vw;
+
 }
 
 a:link {
     text-decoration: none;
+}
+
+#togglemenu a:hover {
+    text-decoration: underline #ffff;
 }
 
 /*************************burgermenu slut************************/
@@ -219,79 +257,62 @@ a:link {
     width: 5vw;
 }
 
-.col1,
-.col2,
-.col3,
-.col4,
-.col5 {
-    display: flex;
-    flex-wrap: wrap;
+
+.item:hover {
+    background-color: #DEDCDB;
 }
 
-.box {
+.container {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw;
+    grid-gap: 2vw;
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
+
+.item {
     background-color: white;
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    flex-basis: 100px;
-    flex-grow: 1;
-    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.box:hover {
-    background-color: #F58E81;
+.item-4 {
+    grid-column: 1 / span 2;
 }
 
-.box2:hover {
-    background-color: #F58E81;
+.item-10 {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 2;
 }
 
-.box3:hover {
-    background-color: #F58E81;
+.item img {
+    width: 10vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
 }
 
-h1:hover {
-    color: #ffff;
+.item-2 h6,
+.item-8 h6 {
+    margin-left: 2vw;
 }
 
-h2:hover {
-    color: #ffff;
+.item-5 h6,
+.item-11 h6 {
+    margin-left: 3vw;
 }
 
-h6:hover {
-    color: #ffff;
+.item-12 img {
+    margin-left: 4vw;
 }
 
-
-.box2 {
-    background-color: white;
-    width: 300px;
-    height: 150px;
-    margin: 10px;
-    flex-basis: 100px;
-    flex-grow: 4.5;
+.item-5 img {
+    margin-left: 1vw;
 }
 
-.box3 {
-    background-color: white;
-    width: 300px;
-    height: 310px;
-    margin: 10px;
-    flex-basis: 100px;
-    flex-grow: 4.5;
-}
-
-.icon {
-    width: 60px;
-    margin-top: 35px;
-}
-
-.icon:hover {}
-
-.icon2 {
-    width: 70px;
-    margin-top: 35px;
-    margin-bottom: 10px;
+.item-3 img {
+    margin-left: 4vw;
 }
 
 /*****************************afleveringer********************/
@@ -324,7 +345,7 @@ h6:hover {
 
 #afllogo {
     position: relative;
-    top: 14vw;
+    top: 11vw;
     left: -1vw;
 }
 
@@ -338,7 +359,7 @@ h6:hover {
 
 #dokument {
     position: relative;
-    top: 16vw;
+    top: 14vw;
     left: -1vw;
 }
 
@@ -353,9 +374,9 @@ h6:hover {
 #down1 {
     height: 5vw;
     width: 5vw;
-    position: relative;
-    top: 15vw;
-    left: 20vw;
+    position: absolute;
+    top: 138vw;
+    left: 90vw;
 
 }
 
@@ -446,7 +467,7 @@ h6:hover {
     background-color: #3f3140;
     display: flex;
     justify-content: center;
-    height: 20vw;
+    height: 19vw;
 }
 
 #måned img {
@@ -466,7 +487,7 @@ h6:hover {
 }
 
 #måned h4 {
-    margin: 2vw;
+    margin: 1vw;
 }
 
 #modul1 h4,
@@ -507,7 +528,23 @@ h6:hover {
     position: absolute;
     left: 15vw;
     width: 80vw;
-    height: 22.3vw;
+    height: 24vw;
+}
+
+#ideogdesignikon1 {
+    position: relative;
+    left: 72vw;
+    top: -11vw;
+}
+
+#ideogdesignikon1 img {
+    width: 6vw;
+}
+
+#ideogdesignikon2 {
+    position: relative;
+    left: 74vw;
+    top: -10vw;
 }
 
 #ovelser {
@@ -516,7 +553,13 @@ h6:hover {
     left: 15vw;
     width: 80vw;
     margin-top: 3.5vw;
-    height: 22.3vw;
+    height: 24vw;
+}
+
+#ovelserikon {
+    position: relative;
+    left: 74vw;
+    top: -10vw;
 }
 
 #tid3,
@@ -531,7 +574,17 @@ h6:hover {
     left: 15vw;
     width: 80vw;
     margin-top: 3.5vw;
-    height: 11vw;
+    height: 12vw;
+}
+
+#arbejdselvikon {
+    position: relative;
+    left: 72vw;
+    top: -11vw;
+}
+
+#arbejdselvikon img {
+    width: 6vw;
 }
 
 #modul1 h3,
@@ -560,6 +613,16 @@ h6:hover {
     margin-bottom: 100vw;
 }
 
+#materiale {
+    position: relative;
+    top: 14vw;
+    right: 2vw;
+}
+
+#materiale img {
+    width: 5vw;
+}
+
 footer {
     background-color: #3f3140;
     display: flex;
@@ -568,4 +631,61 @@ footer {
 
 footer p {
     color: #ffff;
+}
+
+/********************mediaquries**********************/
+@media only screen and (min-width:660px) {
+
+    /*****logind*****/
+    #logind {
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+
+    .logo {
+        height: 25vw;
+    }
+
+    input {
+        width: 30vw;
+        margin-left: 1vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .huskmig {
+        position: relative;
+        top: -4vw;
+        left: 26vw;
+    }
+
+    .huskmig input {
+        margin: 1vw;
+        width: 5vw;
+    }
+
+    label {
+        font-size: 1vw;
+    }
+
+    #logind p {
+        font-size: 1vw;
+        color: #F58E81;
+    }
+
+    .glemtpassword {
+        position: relative;
+        top: -1vw;
+        left: 3vw;
+    }
+
+    .continue {
+        margin-top: 1vw;
+        margin-left: 4.5vw;
+    }
+
+    .logindfacebook {
+        margin-left: 4vw;
+    }
+
 }
