@@ -100,19 +100,19 @@ input {
     margin: 4vw 4vw;
     opacity: 0.85;
     display: inline-block;
-    font-size: 17px;
+    font-size: 3vw;
     line-height: 20px;
     text-decoration: none;
 }
 
 .brugernavn input {
     position: relative;
-    left: -10vw;
+    left: -12vw;
 }
 
 .password input {
     position: relative;
-    left: -7vw;
+    left: -8vw;
 }
 
 input:hover {
@@ -180,8 +180,9 @@ input[type=submit]:hover {
 .password label {
     color: #EA5045;
     position: relative;
-    top: -6vw;
-    left: 10vw;
+    top: -8vw;
+    left: 11vw;
+    font-size: 3vw;
 }
 
 
