@@ -334,7 +334,7 @@ a:link {
     background-color: #ffff;
 }
 
-#neasteaflevering,
+.neasteaflevering,
 #upload {
     background-color: #DEDCDB;
     margin: 3vw;
@@ -352,11 +352,11 @@ a:link {
     width: 8vw;
 }
 
-#dokument img {
+.dokument img {
     width: 5.5vw;
 }
 
-#dokument {
+.dokument {
     position: relative;
     top: 14vw;
     left: -1vw;
@@ -385,7 +385,7 @@ a:link {
     right: 2.5vw;
 }
 
-#down {
+.down {
     height: 5vw;
     width: 5vw;
     position: relative;
@@ -403,7 +403,7 @@ a:link {
     justify-content: space-between;
 }
 
-#opgave {
+.opgave {
     border-bottom: solid #DEDCDB;
     border-left: solid #DEDCDB;
     border-right: solid #DEDCDB;
@@ -414,7 +414,7 @@ a:link {
 
 }
 
-#opgave img {
+.opgave img {
     width: 5.5vw;
 
 }
@@ -505,8 +505,8 @@ a:link {
 #tid2,
 #tid3,
 #tid4,
-#tid5,
-#tid6 {
+.tid5,
+.tid6 {
     background-color: #ffff;
     border-bottom: solid #dedcdb;
     padding: 1vw;
@@ -562,7 +562,7 @@ a:link {
 }
 
 #tid3,
-#tid5 {
+.tid5 {
     margin-top: 3vw;
     border-top: solid #dedcdb;
 }
@@ -612,13 +612,13 @@ a:link {
     margin-bottom: 100vw;
 }
 
-#materiale {
+.materiale {
     position: relative;
     top: 14vw;
     right: 2vw;
 }
 
-#materiale img {
+.materiale img {
     width: 5vw;
 }
 
