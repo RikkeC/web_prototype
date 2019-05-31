@@ -89,7 +89,7 @@ a:link {
 
 .logindfacebook {
     background-color: #f2f2f2;
-    margin-left: 5vw;
+    margin-left: 10vw;
 }
 
 input {
@@ -103,7 +103,16 @@ input {
     font-size: 17px;
     line-height: 20px;
     text-decoration: none;
+}
 
+.brugernavn input {
+    position: relative;
+    left: -10vw;
+}
+
+.password input {
+    position: relative;
+    left: -7vw;
 }
 
 input:hover {
@@ -121,6 +130,8 @@ input[type=submit] {
     background-color: #EA5045;
     color: white;
     cursor: pointer;
+    left: 4vw;
+    position: relative;
 }
 
 input[type=submit]:hover {
@@ -136,6 +147,7 @@ input[type=submit]:hover {
 .brugernavn {
     margin-top: 5vw;
     margin-left: 3vw;
+
 }
 
 .password {
@@ -145,7 +157,7 @@ input[type=submit]:hover {
 .huskmig {
     position: relative;
     top: -12vw;
-    left: 44vw;
+    left: 49vw;
 }
 
 .huskmig input {
@@ -161,8 +173,19 @@ input[type=submit]:hover {
 .glemtpassword {
     position: relative;
     top: -5.5vw;
-    left: 6vw;
+    left: 11vw;
 }
+
+.brugernavn label,
+.password label {
+    color: #EA5045;
+    position: relative;
+    top: -6vw;
+    left: 10vw;
+}
+
+
+
 
 /******************************Burgermenu*************************/
 
